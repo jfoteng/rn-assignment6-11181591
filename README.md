@@ -1,79 +1,124 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+rn-assignment6-11181591
+This project is a React Native application that demonstrates a simple product listing and cart functionality. Users can view a list of available products, add products to their cart, remove products from their cart, and view the items in their cart. The selected items are stored locally on the device using AsyncStorage.
 
-# Getting Started
+Features
+HomeScreen: Displays a list of available products.
+CartScreen: Displays the selected items in the cart.
+Add to Cart Button: Allows users to add products to their cart.
+Remove from Cart Button: Allows users to remove products from their cart.
+Local Storage: Uses AsyncStorage to store selected items locally on the device.
+Installation
+Clone the repository:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+Install dependencies:
 
-```bash
-# using npm
-npm start
+npm install
+Run the application:
 
-# OR using Yarn
-yarn start
-```
 
-## Step 2: Start your Application
+npx react-native run-android  # for Android
+npx react-native run-ios      # for iOS
+Project Structure
+App.js: The main entry point of the application. Sets up the navigation between screens.
+screens/HomeScreen.js: Displays the list of available products and allows users to add products to their cart.
+screens/CartScreen.js: Displays the selected items in the cart and allows users to remove items from the cart.
+components/ProductList.js: A reusable component to display a list of products.
+components/CartList.js: A reusable component to display a list of items in the cart.
+Design Choices
+Navigation
+React Navigation: Used to handle navigation between the HomeScreen and CartScreen. The @react-navigation/native and @react-navigation/native-stack packages are used to create a stack navigator.
+Local Storage
+AsyncStorage: Used to store and retrieve the cart items locally on the device. This allows the cart to persist even when the app is closed and reopened.
+Component Structure
+Reusable Components: The project is structured to use reusable components (ProductList and CartList) for displaying lists of products and cart items, respectively. This helps in maintaining clean and modular code.
+Usage
+View Products: Open the app and view the list of available products on the HomeScreen.
+Add to Cart: Click on the "Add to cart" button to add a product to the cart.
+View Cart: Navigate to the CartScreen to view the selected items in the cart.
+Remove from Cart: Click on the "Remove from cart" button to remove a product from the cart.
+Screenshots
+Home Screen
+![](home1.jpeg)
+Cart Screen
+![](cart1.jpeg)
+Contributing
+Fork the repository
+Create a new branch: git checkout -b my-new-feature
+Commit your changes: git commit -am 'Add some feature'
+Push to the branch: git push origin my-new-feature
+Submit a pull request
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+Acknowledgements
+Thanks to the React Native community for their amazing resources and support.
+Feel free to customize this README as needed for your project.
 
-### For Android
+create a readme file for this project
+ChatGPT
+Sure, here's a complete README file for your React Native project:
 
-```bash
-# using npm
-npm run android
+rn-assignment6-11333031
+This project is a React Native application that demonstrates a simple product listing and cart functionality. Users can view a list of available products, add products to their cart, remove products from their cart, and view the items in their cart. The selected items are stored locally on the device using AsyncStorage.
 
-# OR using Yarn
-yarn android
-```
+Features
+HomeScreen: Displays a list of available products.
+CartScreen: Displays the selected items in the cart.
+Add to Cart Button: Allows users to add products to their cart.
+Remove from Cart Button: Allows users to remove products from their cart.
+Local Storage: Uses AsyncStorage to store selected items locally on the device.
+Installation
+Clone the repository:
 
-### For iOS
+bash
+Copy code
+git clone https://github.com/amoani-yeboah19/rn-assignment6-11333031.git
+cd rn-assignment6-11333031
+Install dependencies:
 
-```bash
-# using npm
-npm run ios
+bash
+Copy code
+npm install
+Run the application:
 
-# OR using Yarn
-yarn ios
-```
+bash
+Copy code
+npx react-native run-android  # for Android
+npx react-native run-ios      # for iOS
+Project Structure
+App.js: The main entry point of the application. Sets up the navigation between screens.
+screens/HomeScreen.js: Displays the list of available products and allows users to add products to their cart.
+screens/CartScreen.js: Displays the selected items in the cart and allows users to remove items from the cart.
+components/ProductList.js: A reusable component to display a list of products.
+components/CartList.js: A reusable component to display a list of items in the cart.
+Design Choices
+Navigation
+React Navigation: Used to handle navigation between the HomeScreen and CartScreen. The @react-navigation/native and @react-navigation/native-stack packages are used to create a stack navigator.
+Local Storage
+AsyncStorage: Used to store and retrieve the cart items locally on the device. This allows the cart to persist even when the app is closed and reopened.
+Component Structure
+Reusable Components: The project is structured to use reusable components (ProductList and CartList) for displaying lists of products and cart items, respectively. This helps in maintaining clean and modular code.
+Usage
+View Products: Open the app and view the list of available products on the HomeScreen.
+Add to Cart: Click on the "Add to cart" button to add a product to the cart.
+View Cart: Navigate to the CartScreen to view the selected items in the cart.
+Remove from Cart: Click on the "Remove from cart" button to remove a product from the cart.
+Screenshots
+Home Screen
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Cart Screen
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+Contributing
+Fork the repository
+Create a new branch: git checkout -b my-new-feature
+Commit your changes: git commit -am 'Add some feature'
+Push to the branch: git push origin my-new-feature
+Submit a pull request
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Acknowledgements
+Thanks to the React Native community for their amazing resources and support.
